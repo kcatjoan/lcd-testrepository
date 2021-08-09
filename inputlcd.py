@@ -2,6 +2,9 @@
 # Example using a character LCD connected to a Raspberry Pi or BeagleBone Black.
 import time
 
+import os.path 
+from os import path
+
 import Adafruit_CharLCD as LCD
 
 import sys
@@ -32,7 +35,8 @@ if (sys.argv[1] == "clear"):
   time.sleep(5.0)
   lcd.clear()
 if (sys.argv[1] == "repeat"):
-  time.sleep(5)
+  while (path.exists("/tmp/lock")):
+    time.sleep(1)
   while "rolodex":
     from rolodex import rolodex as rolodex
     for x in rolodex:

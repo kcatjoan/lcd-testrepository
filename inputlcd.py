@@ -34,7 +34,7 @@ if (sys.argv[1] == "clear"):
 if (sys.argv[1] == "repeat"):
   time.sleep(5)
   while "rolodex":
-    import rolodex.rolodex as rolodex
+    from rolodex import rolodex as rolodex
     for x in rolodex:
       lcd.clear()
       lcd.message(x.rstrip())

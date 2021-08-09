@@ -31,12 +31,13 @@ lcd.show_cursor(False)
 lcd.blink(False)
 message = sys.stdin.readlines()
 lcd.message(message[0].rstrip())
+time.sleep(5)
 if (sys.argv[1] == "clear"):
   time.sleep(5.0)
   lcd.clear()
 if (sys.argv[1] == "repeat"):
   while (path.exists("/tmp/lock")):
-    time.sleep(10)
+    time.sleep(1)
   while "rolodex":
     from rolodex import rolodex as rolodex
     for x in rolodex:

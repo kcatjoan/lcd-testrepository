@@ -35,11 +35,11 @@ time.sleep(5)
 if (sys.argv[1] == "clear"):
   lcd.clear()
 if (sys.argv[1] == "repeat"):
-  while (path.exists("/tmp/lock")):
-    time.sleep(1)
   while "rolodex":
     from rolodex import rolodex as rolodex
     for x in rolodex:
+      while (path.exists("/tmp/lock")):
+       time.sleep(1)
       lcd.clear()
       lcd.message(x.rstrip())
       time.sleep(5)

@@ -38,3 +38,4 @@ if (sys.argv[1] == "repeat"):
     for x in rolodex:
       lcd.clear()
       lcd.message(x.rstrip())
+      time.sleep(5)

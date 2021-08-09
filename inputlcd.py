@@ -36,7 +36,7 @@ if (sys.argv[1] == "clear"):
   lcd.clear()
 if (sys.argv[1] == "repeat"):
   while (path.exists("/tmp/lock")):
-    time.sleep(1)
+    time.sleep(10)
   while "rolodex":
     from rolodex import rolodex as rolodex
     for x in rolodex:

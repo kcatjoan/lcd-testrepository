@@ -33,7 +33,6 @@ message = sys.stdin.readlines()
 lcd.message(message[0].rstrip())
 time.sleep(5)
 if (sys.argv[1] == "clear"):
-  time.sleep(5.0)
   lcd.clear()
 if (sys.argv[1] == "repeat"):
   while (path.exists("/tmp/lock")):

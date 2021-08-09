@@ -22,16 +22,14 @@ lcd_rows    = 2
 lcd = LCD.Adafruit_CharLCD(lcd_rs, lcd_en, lcd_d4, lcd_d5, lcd_d6, lcd_d7,
                            lcd_columns, lcd_rows, lcd_backlight)
 
-if (len(sys.argv) > 1):
-  lcd.clear()
+lcd.clear()
   
 lcd.show_cursor(False)
 lcd.blink(False)
 
-# Demo scrolling message right/left.
-lcd.clear()
 message = sys.stdin.readlines()[0].rstrip()
 #message.rstrip()
 lcd.message(message)
-time.sleep(5.0)
-lcd.clear()
+if (len(sys.argv) > 1):
+  time.sleep(5.0)
+  lcd.clear()

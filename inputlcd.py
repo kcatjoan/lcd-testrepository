@@ -26,10 +26,15 @@ lcd.clear()
   
 lcd.show_cursor(False)
 lcd.blink(False)
-
-message = sys.stdin.readlines()[0].rstrip()
-#message.rstrip()
-lcd.message(message)
-if (len(sys.argv) > 1):
+message = sys.stdin.readlines()
+lcd.message(message[0].rstrip())
+if (sys.argv[1] == "clear"):
   time.sleep(5.0)
   lcd.clear()
+if (sys.argv[1] == "repeat"):
+  time.sleep(5)
+  while "rolodex":
+    import rolodex.rolodex as rolodex
+    for x in rolodex:
+      lcd.clear()
+      lcd.message(x.rstrip())

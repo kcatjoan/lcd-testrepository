@@ -1,1 +1,3 @@
-rolodex = ["f", "g", "e"]
+f 
+g
+e

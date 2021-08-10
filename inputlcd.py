@@ -32,6 +32,9 @@ lcd.blink(False)
 rolodex = sys.stdin.readlines()
 #sets default that input = output
 word = rolodex
+#fucking around to please the wizard
+x = rolodex
+word = x
 #repeat causes loop, which really only works if input is rolodex.py
 if (sys.argv[1] == "repeat"):
   #while "rolodex":
@@ -39,9 +42,6 @@ if (sys.argv[1] == "repeat"):
   for x in rolodex:
       word = x
 
-#for some reason, writing anything but "repeat" after the command makes it freak out. so im trying something
-else:
-  word = rolodex
 #applies linebreak thing to word
 if len(word) < 34:
     if len(word) > 16:

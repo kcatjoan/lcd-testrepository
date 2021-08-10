@@ -29,7 +29,7 @@ lcd.clear()
   
 lcd.show_cursor(False)
 lcd.blink(False)
-
+#rolodex is input
 rolodex = sys.stdin.readlines()
 lcd.message(rolodex[0].rstrip())
 time.sleep(5)
@@ -38,18 +38,18 @@ if (sys.argv[1] == "clear"):
 if (sys.argv[1] == "repeat"):
   while "rolodex":
     for x in rolodex:
-      #pause while time displays
+      #pause while date displays
       while (path.exists("/tmp/lock")):
        time.sleep(1)
-      #check that message will fit
+      #check that message will fit under 34 chars
       if len(x) < 34:
-      #check if message needs breaking
+      #check if message needs breaking (is longer than 16 chars)
           if len(x) > 16:
               midpoint = 8
               #find the first space after the midpoint 
               space = x.find(' ', midpoint)
               last = x[space+1:]
-            #if the last bit is too long to display, the midpoint needs to be earlier so that it can find a sooner space
+            #if the last bit is too long to display (over 16 chars), the midpoint needs to be earlier so that it can find a sooner space
               while len(last) > 16:
                   midpoint = midpoint-1
                   space = x.find(' ', midpoint)
@@ -60,6 +60,7 @@ if (sys.argv[1] == "repeat"):
               message = x
       else:
           message = (len(x))
+      #i have tested the message-breaking chunk and it works. sets the variable message to the desired output
 lcd.clear()
 lcd.message(message.rstrip())
 time.sleep(5)

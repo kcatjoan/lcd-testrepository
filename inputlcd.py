@@ -38,6 +38,10 @@ if (sys.argv[1] == "repeat"):
     #rolodex = sys.stdin.readlines()
   for x in rolodex:
       word = x
+
+#for some reason, writing anything but "repeat" after the command makes it freak out. so im trying something
+else:
+  word = rolodex
 #applies linebreak thing to word
 if len(word) < 34:
     if len(word) > 16:
@@ -53,6 +57,7 @@ if len(word) < 34:
 else:
     message = (len(word))
 #between here and prev comment should set the correct message
+
 print(message)
 lcd.message(message)
 time.sleep(5)

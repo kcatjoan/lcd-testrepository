@@ -1,5 +1,5 @@
-IS IT AN OPPORTUNITY 
-nine-lived and contradictory
+IS IT AN \n OPPORTUNITY 
+nine-lived and /n contradictory
 THIS IS NOT MY BEAUTIFUL HOUSE
 THIS IS NOT MY BEAUTIFUL WIFE
 LETTING THE DAYS GO BY

@@ -58,5 +58,5 @@ if (sys.argv[1] == "clear"):
   lcd.clear()
 else: 
   lcd.clear()
-lcd.message(message.rstrip())
+lcd.message(message)
 time.sleep(5)

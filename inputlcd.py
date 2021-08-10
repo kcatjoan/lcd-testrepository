@@ -32,9 +32,7 @@ lcd.blink(False)
 rolodex = sys.stdin.readlines()
 #sets default that input = output
 word = rolodex
-#fucking around to please the wizard
-x = rolodex
-word = x
+
 #repeat causes loop, which really only works if input is rolodex.py
 if (sys.argv[1] == "repeat"):
   #while "rolodex":

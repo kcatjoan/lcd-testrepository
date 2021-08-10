@@ -30,7 +30,6 @@ lcd.show_cursor(False)
 lcd.blink(False)
 #rolodex is input
 rolodex = sys.stdin.readlines()
-lcd.message(rolodex[0].rstrip())
 time.sleep(5)
 if (sys.argv[1] == "clear"):
   lcd.clear()

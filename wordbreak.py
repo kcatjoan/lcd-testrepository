@@ -1,3 +1,4 @@
+word = sys.stdin.readlines()
 if len(word) < 34:
     if len(word) > 16:
         midpoint = 8

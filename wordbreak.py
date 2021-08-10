@@ -1,5 +1,5 @@
 import sys
-
+rolodex = sys.stdin.readlines()
 for x in rolodex:
     word = x
 if len(word) < 34:

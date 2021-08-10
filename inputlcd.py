@@ -42,24 +42,24 @@ if (sys.argv[1] == "repeat"):
       while (path.exists("/tmp/lock")):
        time.sleep(1)
       #check that message will fit
-if len(word) < 34:
-#check if message needs breaking
-    if len(word) > 16:
-        midpoint = 8
-        #find the first space after the midpoint 
-        space = word.find(' ', midpoint)
-        last = word[space+1:]
-      #if the last bit is too long to display, the midpoint needs to be earlier so that it can find a sooner space
-        while len(last) > 16:
-            midpoint = midpoint-1
-            space = word.find(' ', midpoint)
-            last = word[space+1:]
-        first = word[:space]
-        message = first + "\n" + last
-    else:
-        message = word
-else:
-    message = (len(word))
+      if len(x) < 34:
+      #check if message needs breaking
+          if len(x) > 16:
+              midpoint = 8
+              #find the first space after the midpoint 
+              space = x.find(' ', midpoint)
+              last = x[space+1:]
+            #if the last bit is too long to display, the midpoint needs to be earlier so that it can find a sooner space
+              while len(last) > 16:
+                  midpoint = midpoint-1
+                  space = x.find(' ', midpoint)
+                  last = x[space+1:]
+              first = x[:space]
+              message = first + "\n" + last
+          else:
+              message = x
+      else:
+          message = (len(x))
 lcd.clear()
-lcd.message(x.rstrip())
+lcd.message(message.rstrip())
 time.sleep(5)

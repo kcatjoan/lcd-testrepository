@@ -55,12 +55,12 @@ if (sys.argv[1] == "repeat"):
                   space = x.find(' ', midpoint)
                   last = x[space+1:]
               first = x[:space]
-              message = first + "\n" + last
+              potato = first + "\n" + last
           else:
-              message = x
+              potato = x
       else:
-          message = (len(x))
+          potato = (len(x))
       #i have tested the message-breaking chunk and it works. sets the variable message to the desired output
 lcd.clear()
-lcd.message(message.rstrip())
+lcd.message(potato.rstrip())
 time.sleep(5)

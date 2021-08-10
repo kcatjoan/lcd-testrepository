@@ -32,11 +32,8 @@ lcd.blink(False)
 word = sys.stdin.readlines()
 
 #repeat causes loop, which really only works if input is rolodex.py
-if (sys.argv[1] == "repeat"):
-  #while "rolodex":
-    #rolodex = sys.stdin.readlines()
-  for x in word:
-      word = x
+for x in word:
+  word = x
 
 #applies linebreak thing to word
 if len(word) < 34:

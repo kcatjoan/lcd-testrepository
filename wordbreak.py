@@ -1,3 +1,5 @@
+import sys
+
 word = sys.stdin.readlines()
 if len(word) < 34:
     if len(word) > 16:

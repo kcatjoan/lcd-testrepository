@@ -36,9 +36,9 @@ if (sys.argv[1] == "clear"):
   lcd.clear()
 if (sys.argv[1] == "repeat"):
   while "rolodex":
-    #for x in rolodex:
+    for x in rolodex:
       while (path.exists("/tmp/lock")):
        time.sleep(1)
       lcd.clear()
-      lcd.message(word.rstrip())
+      lcd.message(x.rstrip())
       time.sleep(5)

@@ -32,6 +32,8 @@ lcd.blink(False)
 rolodex = sys.stdin.readlines()
 if (sys.argv[1] == "clear"):
   lcd.clear()
+else:
+  lcd.message(sys.argv[1])
 if (sys.argv[1] == "repeat"):
   while "rolodex":
     rolodex = sys.stdin.readlines()

@@ -30,30 +30,33 @@ lcd.show_cursor(False)
 lcd.blink(False)
 #rolodex is input
 rolodex = sys.stdin.readlines()
+#sets default that input = output
+word = rolodex
+#repeat causes loop, which really only works if input is rolodex.py
+if (sys.argv[1] == "repeat"):
+  #while "rolodex":
+    #rolodex = sys.stdin.readlines()
+  for x in rolodex:
+      word = x
+#applies linebreak thing to word
+if len(word) < 34:
+    if len(word) > 16:
+        midpoint = 8
+        while len(word[midpoint:]) > 16:
+            midpoint = midpoint+1
+        space = word.find(' ', midpoint)
+        last = word[space+1:]
+        first = word[:space]
+        message = first + "\n" + last
+    else:
+       message = word
+else:
+    message = (len(word))
+#between here and prev comment should set the correct message
 if (sys.argv[1] == "clear"):
+  time.sleep(5)
   lcd.clear()
 else: 
-  if (sys.argv[1] == "repeat"):
-    #while "rolodex":
-      #rolodex = sys.stdin.readlines()
-    for x in rolodex:
-        word = x
-    if len(word) < 34:
-        if len(word) > 16:
-            midpoint = 8
-            while len(word[midpoint:]) > 16:
-                midpoint = midpoint+1
-            space = word.find(' ', midpoint)
-            last = word[space+1:]
-            first = word[:space]
-            message = first + "\n" + last
-        else:
-           message = word
-    else:
-        message = (len(word))
-          #i have tested the message-breaking chunk and it works. sets the variable message to the desired output
-  else:
-     message = "wasnt repeat"
 lcd.clear()
 lcd.message(message.rstrip())
 time.sleep(5)

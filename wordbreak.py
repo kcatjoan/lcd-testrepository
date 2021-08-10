@@ -1,6 +1,7 @@
 import sys
 
-word = sys.stdin.readlines()
+for x in rolodex:
+    word = x
 if len(word) < 34:
     if len(word) > 16:
         midpoint = 8

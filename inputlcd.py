@@ -28,16 +28,14 @@ lcd.clear()
   
 lcd.show_cursor(False)
 lcd.blink(False)
-#rolodex is input
-rolodex = sys.stdin.readlines()
-#sets default that input = output
-word = rolodex
+#word is input
+word = sys.stdin.readlines()
 
 #repeat causes loop, which really only works if input is rolodex.py
 if (sys.argv[1] == "repeat"):
   #while "rolodex":
     #rolodex = sys.stdin.readlines()
-  for x in rolodex:
+  for x in word:
       word = x
 
 #applies linebreak thing to word

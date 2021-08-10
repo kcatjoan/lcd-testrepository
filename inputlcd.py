@@ -5,7 +5,7 @@ import time
 import os.path 
 from os import path
 
-  import Adafruit_CharLCD as LCD
+import Adafruit_CharLCD as LCD
 
 import sys
 # Raspberry Pi pin configuration:

@@ -33,7 +33,7 @@ rolodex = sys.stdin.readlines()
 if (sys.argv[1] == "clear"):
   lcd.clear()
 else: 
-  lcd.message("didnt clear")
+  message = "didnt clear"
 if (sys.argv[1] == "repeat"):
   #while "rolodex":
     #rolodex = sys.stdin.readlines()
@@ -53,6 +53,8 @@ if (sys.argv[1] == "repeat"):
   else:
       message = (len(word))
         #i have tested the message-breaking chunk and it works. sets the variable message to the desired output
+else:
+   message = "wasnt repeat"
 lcd.clear()
 lcd.message(message.rstrip())
 time.sleep(5)

@@ -33,12 +33,11 @@ lcd.blink(False)
 
 
 #set input to word
-rolodex = sys.stdin.readlines()
-#print input
-print(rolodex)
+word = sys.stdin.readlines()
+print(word)
 #the load-bearing thing
-for x in rolodex:
-  rolodex = x
+for x in word:
+  word = x
   time.sleep(1)
 
 def wordbreak(word):
@@ -54,10 +53,7 @@ def wordbreak(word):
       else:
            message = word
           #end of linebreak stuff
-#break and then print it for test reasons           
-wordbreak(rolodex)
-print(message)          
-
+          
 def display(word):
   #just copy-pasting the whole linebreak thing. APPLY LINEBREAK ETC TO INPUT#
     wordbreak(word)

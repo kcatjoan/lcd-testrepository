@@ -1,3 +1,2 @@
-'a 
-'long 
 list
+print

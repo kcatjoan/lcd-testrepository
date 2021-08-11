@@ -19,6 +19,10 @@ now i think
 heartbreaking but
 also insane. 
 also very funny.
+I'm up in the woods
+I'm down on my mind
+I'm building a still
+To slow down the time
 this place could be beautiful
 youcanmake this placebeautiful
 BRO! TELL ME WE STILL KNOW 

@@ -82,6 +82,8 @@ def display(word):
       lcd.message(message)
       #pause it
       time.sleep(1)
+      #clear it
+      lcd.clear()
 
 #if clear, display then clear 
 if (sys.argv[1] == "clear"):

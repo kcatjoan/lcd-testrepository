@@ -54,7 +54,6 @@ if len(word) < 34:
     if (sys.argv[1] == "clear"):
       lcd.clear()
     if (sys.argv[1] == "repeat"):
-      if (sys.argv[1] == "repeat"):
   #start of fresh copy'
     while "rolodex":
     #for x in rolodex:

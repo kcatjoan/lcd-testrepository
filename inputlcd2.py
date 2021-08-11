@@ -38,7 +38,7 @@ word = sys.stdin.readlines()
 #the load-bearing thing
 for x in word:
   word = x
-  time.sleep(2)
+  time.sleep(1)
 
 def wordbreak(word):
     if len(word) < 34:
@@ -66,7 +66,8 @@ def display(word):
 
 #if clear, display then clear 
 if (sys.argv[1] == "clear"):
-  display(word)
+  display(message)
   lcd.clear()
 else:
+  display(message)
   time.sleep(1)

@@ -58,17 +58,17 @@ def display(word):
   #just copy-pasting the whole linebreak thing. APPLY LINEBREAK ETC TO INPUT#
     message = wordbreak(word)
     #print the broken thing
-    for x in message:
-        print(x)
-        #display the broken thing
-        lcd.message(message)
-        #pause it
-        time.sleep(1)
+    print(x)
+    #display the broken thing
+    lcd.message(message)
+    #pause it
+    time.sleep(1)
 
 #if clear, display then clear 
 if (sys.argv[1] == "clear"):
-  display(word)
-  lcd.clear()
+  for x in message:
+    display(x)
+    lcd.clear()
 else:
   display(word)
   time.sleep(1)

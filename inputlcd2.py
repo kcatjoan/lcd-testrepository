@@ -35,11 +35,7 @@ lcd.blink(False)
 #set input to word
 word = sys.stdin.readlines()
 #test print 1: input/output
-print(word)
-#the load-bearing thing
-#for x in word:
-#  word = x
-#  time.sleep(1)
+#print(word)
 
 def wordbreak(word):
 
@@ -48,10 +44,6 @@ def wordbreak(word):
       midpoint = lcd_columns+1
       space = word.rfind(' ', 0, midpoint)
       last = word[space+1:]
-      # while len(word[midpoint:]) > 16:
-      #    midpoint = midpoint-1
-      #   space = word.find(' ', midpoint)
-      #  last = word[space+1:]
       first = word[:space]
       print(len(word))
       print(len(first))
@@ -69,8 +61,8 @@ def wordbreak(word):
     return len(word)
     
 #test print 2: broken word
-for x in word:
-   print wordbreak(x)
+#for x in word:
+ #  print wordbreak(x)
 
 def display(word):
   #just copy-pasting the whole linebreak thing. APPLY LINEBREAK ETC TO INPUT#

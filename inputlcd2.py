@@ -31,11 +31,13 @@ lcd.show_cursor(False)
 lcd.blink(False)
 #SETUP ENDS
 
+
+#set input to word
+word = sys.stdin.readlines()
+
 #the load-bearing thing
 for x in word:
   word = x
-#set input to word
-word = sys.stdin.readlines()
 
 #format word, change variable to message
 if len(word) < 34:

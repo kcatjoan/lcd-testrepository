@@ -68,7 +68,10 @@ def wordbreak(word):
  #  print wordbreak(x)
 
 def display(word):
-  #just copy-pasting the whole linebreak thing. APPLY LINEBREAK ETC TO INPUT#
+  #check date 
+  while (path.exists("/tmp/lock")):
+         time.sleep(1)
+  #take each item, clear screen, add wordbreak
     for x in word:
       lcd.clear()
       message = wordbreak(x)
@@ -78,7 +81,7 @@ def display(word):
       #display the broken thing
       lcd.message(message)
       #pause it
-      time.sleep(1)
+      time.sleep(5)
       #clear it
      
 

@@ -4,7 +4,7 @@ nine-lived and contradictory
 THIS IS NOT MY BEAUTIFUL HOUSE
 THIS IS NOT MY BEAUTIFUL WIFE
 LETTING THE DAYS GO BY
-LETTING THE WATER HOLD ME DOWN
+LETTING THE WATE HOLD ME DOWN
 LETTING THE DAYS GO BY 
 WATER FLOWING UNDERGROUND
 i heard a bird sing 
@@ -15,8 +15,10 @@ we are nearer to spring
 than we were in september
 i heard a bird sing 
 in the dark of december
-now i think heartbreaking but
-also insane. also very funny.
+now i think 
+heartbreaking but
+also insane. 
+also very funny.
 this place could be beautiful
 youcanmake this placebeautiful
 BRO! TELL ME WE STILL KNOW 

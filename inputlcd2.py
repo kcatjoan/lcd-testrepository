@@ -39,7 +39,7 @@ word = sys.stdin.readlines()
 for x in word:
   word = x
 
-def display():
+def word.display():
   #just copy-pasting the whole linebreak thing. APPLY LINEBREAK ETC TO INPUT#
   if len(word) < 34:
     if len(word) > 16:

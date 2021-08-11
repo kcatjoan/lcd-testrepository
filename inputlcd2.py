@@ -40,20 +40,23 @@ for x in word:
   word = x
   time.sleep(2)
 
+def wordbreak(word):
+    if len(word) < 34:
+      if len(word) > 16:
+          midpoint = 8
+          while len(word[midpoint:]) > 16:
+              midpoint = midpoint+1
+          space = word.find(' ', midpoint)
+          last = word[space+1:]
+          first = word[:space]
+          message = first + "\n" + last
+      else:
+           message = word
+          #end of linebreak stuff
+          
 def display(word):
   #just copy-pasting the whole linebreak thing. APPLY LINEBREAK ETC TO INPUT#
-  if len(word) < 34:
-    if len(word) > 16:
-        midpoint = 8
-        while len(word[midpoint:]) > 16:
-            midpoint = midpoint+1
-        space = word.find(' ', midpoint)
-        last = word[space+1:]
-        first = word[:space]
-        message = first + "\n" + last
-    else:
-         message = word
-        #end of linebreak stuff
+    wordbreak(word)
     #print the broken thing
     print(message)
     #display the broken thing

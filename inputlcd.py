@@ -54,7 +54,16 @@ if len(word) < 34:
     if (sys.argv[1] == "clear"):
       lcd.clear()
     if (sys.argv[1] == "repeat"):
+      if (sys.argv[1] == "repeat"):
+  #start of fresh copy
+  while "rolodex":
+    #for x in rolodex:
+      while (path.exists("/tmp/lock")):
+       time.sleep(1)
+      lcd.clear()
+      lcd.message(x.rstrip())
       time.sleep(5)
+      #end
       
 else:
     message = (len(word))

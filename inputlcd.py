@@ -32,10 +32,11 @@ lcd.blink(False)
 word = sys.stdin.readlines()
 
 #repeat causes loop, which really only works if input is rolodex.py
+
 for x in word:
   word = x
   time.sleep(1)
-  #just copy-pasting the whole linebreak thing#
+  #just copy-pasting the whole linebreak thing. APPLY LINEBREAK ETC TO INPUT#
   if len(word) < 34:
     if len(word) > 16:
         midpoint = 8
@@ -47,50 +48,59 @@ for x in word:
         message = first + "\n" + last
     else:
          message = word
+        #end of linebreak stuff
+#print the broken thing
     print(message)
+#display the broken thing
     lcd.message(message)
+#pause it
     time.sleep(1)
+#if it says to clear it, clear it
     if (sys.argv[1] == "clear"):
       lcd.clear()
+#if it says repeat....
     if (sys.argv[1] == "repeat"):
-  #start of fresh copy'
+  #continue forever except at the date
       while "rolodex":
         while (path.exists("/tmp/lock")):
          time.sleep(1)
+        #wipe the lcd
         lcd.clear()
-        lcd.message(message.rstrip())
+        #display the message(which is the broken thing)
+        lcd.message(message)
+        #pause
         time.sleep(1)
         #end of paste
-
+#i think this next chunk is redundant so im commenting it out
 #applies linebreak thing to word
-if len(word) < 34:
-    if len(word) > 16:
-        midpoint = 8
-        while len(word[midpoint:]) > 16:
-            midpoint = midpoint+1
-        space = word.find(' ', midpoint)
-        last = word[space+1:]
-        first = word[:space]
-        message = first + "\n" + last
-    else:
-         message = word
-    print(message)
-    lcd.message(message)
-    time.sleep(1)
-    if (sys.argv[1] == "clear"):
-      lcd.clear()
-    if (sys.argv[1] == "repeat"):
+#if len(word) < 34:
+ #   if len(word) > 16:
+  #      midpoint = 8
+   #     while len(word[midpoint:]) > 16:
+   #         midpoint = midpoint+1
+    #    space = word.find(' ', midpoint)
+     #   last = word[space+1:]
+      #  first = word[:space]
+       # message = first + "\n" + last
+ #   else:
+  #       message = word
+   # print(message)
+#    lcd.message(message)
+ #   time.sleep(1)
+  #  if (sys.argv[1] == "clear"):
+   #   lcd.clear()
+    #if (sys.argv[1] == "repeat"):
   #start of fresh copy'
-      while "rolodex":
-        while (path.exists("/tmp/lock")):
-         time.sleep(1)
-        lcd.clear()
-        lcd.message(message.rstrip())
-        time.sleep(1)
+#      while "rolodex":
+ #       while (path.exists("/tmp/lock")):
+  #       time.sleep(1)
+   #     lcd.clear()
+    #    lcd.message(message.rstrip())
+     #   time.sleep(1)
         #end
       
-else:
-    message = (len(word))
-    print(message)
+#else:
+    #message = (len(word))
+   # print(message)
     
 #between here and prev comment should set the correct message

@@ -71,7 +71,7 @@ def display(word):
       lcd.clear()
       message = wordbreak(x)
       #test print 4: print the broken thing
-      if testrun > 0:
+      if len(testrun) > 0:
         print(message)
       #display the broken thing
       lcd.message(message)

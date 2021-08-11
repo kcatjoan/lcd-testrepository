@@ -37,24 +37,31 @@ word = sys.stdin.readlines()
 #test print 1: input/output
 print(word)
 #the load-bearing thing
-for x in word:
-  word = x
-  time.sleep(1)
+#for x in word:
+#  word = x
+#  time.sleep(1)
 
 def wordbreak(word):
-    for x in word:
-      if len(word) < 34:
-        if len(word) > 16:
-            midpoint = 8
-            while len(word[midpoint:]) > 16:
-                midpoint = midpoint+1
-            space = word.find(' ', midpoint)
+
+    if len(word) < (lcd_rows*lcd_columns):
+        if len(word) > lcd_columns:
+            midpoint = lcd_columns+1
+            space = word.rfind(' ', 0, midpoint)
             last = word[space+1:]
+           # while len(word[midpoint:]) > 16:
+            #    midpoint = midpoint-1
+             #   space = word.find(' ', midpoint)
+              #  last = word[space+1:]
             first = word[:space]
+            print(len(word))
+            print(len(first))
+            print(len(last))
             return first + "\n" + last
+            
         else:
              return word
-          #end of linebreak stuff
+    else:
+        return len(word)
 #test print 2: broken word
 print wordbreak(word)
 

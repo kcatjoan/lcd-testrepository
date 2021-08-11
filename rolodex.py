@@ -1,2 +1,2 @@
-list
 print
+list

@@ -41,7 +41,7 @@ testrun = 0
 
 def wordbreak(word):
 
-  if len(word) < (lcd_rows*lcd_columns):
+  if len(word) < (lcd_rows*lcd_columns + 2):
     if len(word) > lcd_columns:
       midpoint = lcd_columns+1
       space = word.rfind(' ', 0, midpoint)

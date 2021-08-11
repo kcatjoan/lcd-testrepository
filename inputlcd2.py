@@ -87,6 +87,9 @@ if len(sys.argv) > 1:
   if (sys.argv[1] == "repeat"):
     while("rolodex"):
       display(word)
+  if (sys.argv[1] == "print"):
+    display(word)
+    print(word)
  
 else:
     display(word)

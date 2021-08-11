@@ -68,3 +68,5 @@ def display(word):
 if (sys.argv[1] == "clear"):
   display(word)
   lcd.clear()
+else:
+  time.sleep(1)

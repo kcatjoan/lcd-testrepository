@@ -71,7 +71,8 @@ def display(word):
       lcd.clear()
       message = wordbreak(x)
       #test print 4: print the broken thing
-      #print(message)
+      if testrun > 0:
+        print(message)
       #display the broken thing
       lcd.message(message)
       #pause it
@@ -88,8 +89,8 @@ if len(sys.argv) > 1:
     while("rolodex"):
       display(word)
   if (sys.argv[1] == "print"):
+    testrun = 1
     display(word)
-    print(word)
  
 else:
     display(word)

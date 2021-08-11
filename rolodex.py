@@ -1,3 +1,3 @@
-a 
-long 
+'a 
+'long 
 list

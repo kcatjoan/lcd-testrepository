@@ -49,9 +49,9 @@ def wordbreak(word):
           space = word.find(' ', midpoint)
           last = word[space+1:]
           first = word[:space]
-          return = first + "\n" + last
+          return first + "\n" + last
       else:
-           return = word
+           return word
           #end of linebreak stuff
           
 def display(word):

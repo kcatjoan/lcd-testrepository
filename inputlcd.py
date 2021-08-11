@@ -52,7 +52,11 @@ if len(word) < 34:
     time.sleep(5)
     if (sys.argv[1] == "clear"):
       lcd.clear()
+    if (sys.argv[1] == "repeat"):
+      time.sleep(5)
+      
 else:
     message = (len(word))
     print(message)
+    
 #between here and prev comment should set the correct message

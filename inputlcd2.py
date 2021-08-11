@@ -45,9 +45,10 @@ def wordbreak(word):
       space = word.rfind(' ', 0, midpoint)
       last = word[space+1:]
       first = word[:space]
-      print(len(word))
-      print(len(first))
-      print(len(last))
+      #test print 3: length check
+      #print(len(word))
+      #print(len(first))
+      #print(len(last))
       if (len(first) > lcd_columns):
         return "first row " + str(len(first))
       if (len(last) > lcd_columns):
@@ -69,8 +70,8 @@ def display(word):
     for x in word:
       lcd.clear()
       message = wordbreak(x)
-      #print the broken thing
-      print(message)
+      #test print 4: print the broken thing
+      #print(message)
       #display the broken thing
       lcd.message(message)
       #pause it

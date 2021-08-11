@@ -36,9 +36,9 @@ lcd.blink(False)
 word = sys.stdin.readlines()
 print(word)
 #the load-bearing thing
-for x in word:
-  word = x
-  time.sleep(1)
+#for x in word:
+ # word = x
+  #time.sleep(1)
 
 def wordbreak(word):
     if len(word) < 34:

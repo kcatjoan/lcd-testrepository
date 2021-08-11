@@ -34,6 +34,7 @@ word = sys.stdin.readlines()
 #repeat causes loop, which really only works if input is rolodex.py
 for x in word:
   word = x
+  time.sleep(5)
 
 #applies linebreak thing to word
 if len(word) < 34:

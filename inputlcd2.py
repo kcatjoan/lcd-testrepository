@@ -43,25 +43,31 @@ print(word)
 
 def wordbreak(word):
 
-    if len(word) < (lcd_rows*lcd_columns):
-        if len(word) > lcd_columns:
-            midpoint = lcd_columns+1
-            space = word.rfind(' ', 0, midpoint)
-            last = word[space+1:]
-           # while len(word[midpoint:]) > 16:
-            #    midpoint = midpoint-1
-             #   space = word.find(' ', midpoint)
-              #  last = word[space+1:]
-            first = word[:space]
-            print(len(word))
-            print(len(first))
-            print(len(last))
-            return first + "\n" + last
-            
-        else:
-             return word
+  if len(word) < (lcd_rows*lcd_columns):
+    if len(word) > lcd_columns:
+      midpoint = lcd_columns+1
+      space = word.rfind(' ', 0, midpoint)
+      last = word[space+1:]
+      # while len(word[midpoint:]) > 16:
+      #    midpoint = midpoint-1
+      #   space = word.find(' ', midpoint)
+      #  last = word[space+1:]
+      first = word[:space]
+      print(len(word))
+      print(len(first))
+      print(len(last))
+      if (len(first) > lcd_columns):
+        return "first row " + str(len(first))
+      if (len(last) > lcd_columns):
+        return "second row " + str(len(last))
+      else:
+        return first + "\n" + last
+
     else:
-        return len(word)
+     return word
+  else:
+    return len(word)
+    
 #test print 2: broken word
 for x in word:
    print wordbreak(x)

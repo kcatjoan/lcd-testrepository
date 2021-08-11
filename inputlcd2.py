@@ -91,6 +91,9 @@ if len(sys.argv) > 1:
   if (sys.argv[1] == "clear"):
       display(word)
       lcd.clear()
+  if (sys.argv[1] == "repeat"):
+    while("rolodex"):
+      display(word)
   else:
     display(word)
     time.sleep(1)

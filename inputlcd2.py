@@ -34,7 +34,7 @@ lcd.blink(False)
 
 #set input to word
 word = sys.stdin.readlines()
-
+print(word)
 #the load-bearing thing
 for x in word:
   word = x

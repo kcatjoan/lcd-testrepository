@@ -34,7 +34,7 @@ word = sys.stdin.readlines()
 #repeat causes loop, which really only works if input is rolodex.py
 for x in word:
   word = x
-  time.sleep(5)
+  time.sleep(1)
   #just copy-pasting the whole linebreak thing#
   if len(word) < 34:
     if len(word) > 16:
@@ -49,7 +49,7 @@ for x in word:
          message = word
     print(message)
     lcd.message(message)
-    time.sleep(5)
+    time.sleep(1)
     if (sys.argv[1] == "clear"):
       lcd.clear()
     if (sys.argv[1] == "repeat"):
@@ -59,7 +59,7 @@ for x in word:
          time.sleep(1)
         lcd.clear()
         lcd.message(message.rstrip())
-        time.sleep(5)
+        time.sleep(1)
         #end of paste
 
 #applies linebreak thing to word
@@ -76,7 +76,7 @@ if len(word) < 34:
          message = word
     print(message)
     lcd.message(message)
-    time.sleep(5)
+    time.sleep(1)
     if (sys.argv[1] == "clear"):
       lcd.clear()
     if (sys.argv[1] == "repeat"):
@@ -86,7 +86,7 @@ if len(word) < 34:
          time.sleep(1)
         lcd.clear()
         lcd.message(message.rstrip())
-        time.sleep(5)
+        time.sleep(1)
         #end
       
 else:

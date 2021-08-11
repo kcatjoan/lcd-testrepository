@@ -35,6 +35,7 @@ word = sys.stdin.readlines()
 for x in word:
   word = x
   time.sleep(5)
+  print(x)
 
 #applies linebreak thing to word
 if len(word) < 34:

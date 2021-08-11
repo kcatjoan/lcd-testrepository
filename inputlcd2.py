@@ -87,7 +87,7 @@ def display(word):
      
 
 #if clear, display then clear
-if len(sys.argv[1]) > 0:
+if len(sys.argv) > 0:
   if (sys.argv[1] == "clear"):
       display(word)
       lcd.clear()

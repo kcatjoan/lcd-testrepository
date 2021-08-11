@@ -18,23 +18,22 @@ in the dark of december
 now i think heartbreaking but
 also insane. also very funny.
 this place could be beautiful
-youcouldmake this placebeautiful
-BRO! TELL ME WE STILL 
-KNOW HOW TO SPEAK OF KINGS!
-Whatismore generous thanawindow?
+youcanmake this placebeautiful
+BRO! TELL ME WE STILL KNOW 
+HOW TO SPEAK OF KINGS!
 if i rhyme it is it poetry?
 noetry
-We can hold all these ideas at once
-andfeelboth heavy and weightless
-with the absurd beauty of it all
+We can hold all these ideas
+andfeel heavy and weightless
+with the absurd beauty of itall
 What do you want from a poem? 
-Is it worth dying to find out?
+Isit worth dying to find out?
 Some bit of historical bunk
-Filled our grammar with Latinate junk.
+Fillsour grammer w Latinate junk
 It banned prepositions
 From final positions,
 Ita Anglis difficile nunc.
 Make the ordinary 
 come alive for them.
-The extraordinary will 
+The extra ordinary will 
 take care of itself.

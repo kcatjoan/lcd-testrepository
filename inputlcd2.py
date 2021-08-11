@@ -51,7 +51,7 @@ if len(word) < 34:
 #clear: print straight input and then clear
 if (sys.argv[1] == "clear"):
   print(message)
-  lcd.messaeg(message)
+  lcd.message(message)
   time.sleep(2)
   lcd.clear()
 

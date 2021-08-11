@@ -95,8 +95,8 @@ if len(sys.argv) > 1:
     while("rolodex"):
       display(word)
   else:
-    display(word)
+#    display(word)
     time.sleep(1)
 else:
-    display(word)
+ #   display(word)
     time.sleep(1)

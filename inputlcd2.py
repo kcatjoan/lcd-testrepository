@@ -41,24 +41,25 @@ for x in word:
   time.sleep(1)
 
 def wordbreak(word):
-    if len(word) < 34:
-      if len(word) > 16:
-          midpoint = 8
-          while len(word[midpoint:]) > 16:
-              midpoint = midpoint+1
-          space = word.find(' ', midpoint)
-          last = word[space+1:]
-          first = word[:space]
-          return first + "\n" + last
-      else:
-           return word
+    for x in word:
+      if len(word) < 34:
+        if len(word) > 16:
+            midpoint = 8
+            while len(word[midpoint:]) > 16:
+                midpoint = midpoint+1
+            space = word.find(' ', midpoint)
+            last = word[space+1:]
+            first = word[:space]
+            return first + "\n" + last
+        else:
+             return word
           #end of linebreak stuff
           
 def display(word):
   #just copy-pasting the whole linebreak thing. APPLY LINEBREAK ETC TO INPUT#
     message = wordbreak(word)
     #print the broken thing
-    print(x)
+    print(message)
     #display the broken thing
     lcd.message(message)
     #pause it
@@ -66,8 +67,7 @@ def display(word):
 
 #if clear, display then clear 
 if (sys.argv[1] == "clear"):
-  for x in word:
-    display(x)
+    display(word)
     lcd.clear()
 else:
   display(word)

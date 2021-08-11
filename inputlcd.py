@@ -47,12 +47,12 @@ if len(word) < 34:
         message = first + "\n" + last
     else:
          message = word
-  print(message)
-  lcd.message(message)
-  time.sleep(5)
-  if (sys.argv[1] == "clear"):
+    print(message)
+    lcd.message(message)
     time.sleep(5)
-    lcd.clear()
+    if (sys.argv[1] == "clear"):
+      time.sleep(5)
+      lcd.clear()
 else:
     message = (len(word))
 #between here and prev comment should set the correct message

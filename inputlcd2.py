@@ -36,6 +36,8 @@ lcd.blink(False)
 word = sys.stdin.readlines()
 #test print 1: input/output
 #print(word)
+#set testrun to false
+testrun = 0
 
 def wordbreak(word):
 
@@ -71,7 +73,7 @@ def display(word):
       lcd.clear()
       message = wordbreak(x)
       #test print 4: print the broken thing
-      if len(testrun) > 0:
+      if testrun > 0:
         print(message)
       #display the broken thing
       lcd.message(message)

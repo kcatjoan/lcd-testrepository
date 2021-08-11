@@ -36,9 +36,9 @@ lcd.blink(False)
 word = sys.stdin.readlines()
 print(word)
 #the load-bearing thing
-#for x in word:
- # word = x
-  #time.sleep(1)
+for x in word:
+  word = x
+  time.sleep(1)
 
 def wordbreak(word):
     if len(word) < 34:
@@ -58,11 +58,12 @@ def display(word):
   #just copy-pasting the whole linebreak thing. APPLY LINEBREAK ETC TO INPUT#
     message = wordbreak(word)
     #print the broken thing
-    print(message)
-    #display the broken thing
-    lcd.message(message)
-    #pause it
-    time.sleep(1)
+    for x in message:
+        print(x)
+        #display the broken thing
+        lcd.message(message)
+        #pause it
+        time.sleep(1)
 
 #if clear, display then clear 
 if (sys.argv[1] == "clear"):

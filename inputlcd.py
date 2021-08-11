@@ -56,4 +56,3 @@ else:
     message = (len(word))
     print(message)
 #between here and prev comment should set the correct message
-

@@ -39,8 +39,9 @@ word = sys.stdin.readlines()
 for x in word:
   word = x
 
-#format word, change variable to message
-if len(word) < 34:
+def display():
+  #just copy-pasting the whole linebreak thing. APPLY LINEBREAK ETC TO INPUT#
+  if len(word) < 34:
     if len(word) > 16:
         midpoint = 8
         while len(word[midpoint:]) > 16:
@@ -51,26 +52,15 @@ if len(word) < 34:
         message = first + "\n" + last
     else:
          message = word
-        
-        
-#clear: print straight input and then clear
-if (sys.argv[1] == "clear"):
-  print(message)
-  lcd.message(message)
-  time.sleep(2)
-  lcd.clear()
+        #end of linebreak stuff
+    #print the broken thing
+    print(message)
+    #display the broken thing
+    lcd.message(message)
+    #pause it
+    time.sleep(1)
 
-#repeat: 
-if (sys.argv[1] == "repeat"):
-  #continue forever except at the date
-      while "rolodex":
-        while (path.exists("/tmp/lock")):
-         time.sleep(1)
-        #wipe the lcd
-        lcd.clear()
-        #display the message
-        lcd.message(message)
-        #sleep
-        time.sleep(3)
-        #it will repeat
-        
+#if clear, display then clear 
+if (sys.argv[1] == "clear"):
+  message.display()
+  lcd.clear()

@@ -59,7 +59,7 @@ def wordbreak(word):
     else:
      return word
   else:
-    return len(word)
+    return str(len(word))
     
 #test print 2: broken word
 #for x in word:

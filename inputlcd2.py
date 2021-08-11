@@ -72,17 +72,17 @@ def display(word):
   while (path.exists("/tmp/lock")):
          time.sleep(1)
   #take each item, clear screen, add wordbreak
-    for x in word:
-      lcd.clear()
-      message = wordbreak(x)
-      #test print 4: print the broken thing
-      if testrun > 0:
-        print(message)
-      #display the broken thing
-      lcd.message(message)
-      #pause it
-      time.sleep(5)
-      #clear it
+  for x in word:
+    lcd.clear()
+    message = wordbreak(x)
+    #test print 4: print the broken thing
+    if testrun > 0:
+      print(message)
+    #display the broken thing
+    lcd.message(message)
+    #pause it
+    time.sleep(5)
+    #clear it
      
 
 #if clear, display then clear

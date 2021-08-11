@@ -1,5 +1,6 @@
 IS IT AN OPPORTUNITY 
 nine-lived and contradictory
+Centered and balanced.
 THIS IS NOT MY BEAUTIFUL HOUSE
 THIS IS NOT MY BEAUTIFUL WIFE
 LETTING THE DAYS GO BY

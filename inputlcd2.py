@@ -62,5 +62,5 @@ def display(word):
 
 #if clear, display then clear 
 if (sys.argv[1] == "clear"):
-  message.display()
+  display(message)
   lcd.clear()

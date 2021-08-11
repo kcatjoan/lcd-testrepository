@@ -63,7 +63,8 @@ def wordbreak(word):
     else:
         return len(word)
 #test print 2: broken word
-print wordbreak(word)
+for x in word:
+   print wordbreak(x)
 
 def display(word):
   #just copy-pasting the whole linebreak thing. APPLY LINEBREAK ETC TO INPUT#

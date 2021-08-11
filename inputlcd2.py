@@ -38,6 +38,7 @@ word = sys.stdin.readlines()
 #the load-bearing thing
 for x in word:
   word = x
+  time.sleep(2)
 
 def display(word):
   #just copy-pasting the whole linebreak thing. APPLY LINEBREAK ETC TO INPUT#

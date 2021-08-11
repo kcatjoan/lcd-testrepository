@@ -49,14 +49,14 @@ def wordbreak(word):
           space = word.find(' ', midpoint)
           last = word[space+1:]
           first = word[:space]
-          message = first + "\n" + last
+          return = first + "\n" + last
       else:
-           message = word
+           return = word
           #end of linebreak stuff
           
 def display(word):
   #just copy-pasting the whole linebreak thing. APPLY LINEBREAK ETC TO INPUT#
-    wordbreak(word)
+    message = wordbreak(word)
     #print the broken thing
     print(message)
     #display the broken thing
@@ -66,8 +66,8 @@ def display(word):
 
 #if clear, display then clear 
 if (sys.argv[1] == "clear"):
-  display(message)
+  display(word)
   lcd.clear()
 else:
-  display(message)
+  display(word)
   time.sleep(1)

@@ -35,7 +35,32 @@ word = sys.stdin.readlines()
 for x in word:
   word = x
   time.sleep(5)
-  print(x)
+  #just copy-pasting the whole linebreak thing#
+  if len(word) < 34:
+    if len(word) > 16:
+        midpoint = 8
+        while len(word[midpoint:]) > 16:
+            midpoint = midpoint+1
+        space = word.find(' ', midpoint)
+        last = word[space+1:]
+        first = word[:space]
+        message = first + "\n" + last
+    else:
+         message = word
+    print(message)
+    lcd.message(message)
+    time.sleep(5)
+    if (sys.argv[1] == "clear"):
+      lcd.clear()
+    if (sys.argv[1] == "repeat"):
+  #start of fresh copy'
+      while "rolodex":
+        while (path.exists("/tmp/lock")):
+         time.sleep(1)
+        lcd.clear()
+        lcd.message(message.rstrip())
+        time.sleep(5)
+        #end of paste
 
 #applies linebreak thing to word
 if len(word) < 34:

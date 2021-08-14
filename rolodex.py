@@ -7,6 +7,7 @@ LETTING THE DAYS GO BY
 LETTING THE WATE HOLD ME DOWN
 LETTING THE DAYS GO BY 
 WATER FLOWING UNDERGROUND
+perfectionism needs no help
 i heard a bird sing 
 in the dark of december
 a magical thing 
